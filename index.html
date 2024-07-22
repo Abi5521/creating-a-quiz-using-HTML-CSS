@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose the Option</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <h1>In web design, what does CSS stand for?</h1>
+            <div class="options">
+                <div id="btn1" onclick="wrong()"><button>A</button><p>Counter Strike Source</p></div>
+                <div id="btn2" onclick="wrong1()"><button>B</button><p>Corrective Style Sheet</p></div>
+                <div id="btn3" onclick="wrong2()"><button>C</button><p>Computer Style Sheet</p></div>
+                <div id="btn4" onclick="right()"><button>D</button><p>Cascading Style Sheet</p></div>
+            </div>
+        </div>
+    </div>
+
+    <Script>
+        function wrong(){
+            document.getElementById("btn1").style.backgroundColor="red";
+        }
+        function wrong1(){
+            document.getElementById("btn2").style.backgroundColor="red";
+        }
+        function wrong2(){
+            document.getElementById("btn3").style.backgroundColor="red";
+        }
+        function right(){
+            document.getElementById("btn4").style.backgroundColor="green";
+        }
+    </Script>
+</body>
+</html>
